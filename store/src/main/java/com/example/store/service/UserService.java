@@ -23,7 +23,8 @@ public class UserService {
                 .stream()
                 .map(user ->  new UserDto(
                         user.getId(),
-                        user.getName()
+                        user.getName(),
+                        user.getEmail()
                 )).collect(Collectors.toList());
     }
 
